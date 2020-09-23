@@ -33,7 +33,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/nadavleh/Chess-AI">
+  <a href="https://github.com/nadavleh/Chess_AI">
   </a>
 
   <h3 align="center">Fishyfish</h3>
@@ -41,14 +41,14 @@
   <p align="center">
     This is simple python chess program written with pygame for the GUI. The chess AI uses minimax with alpha-beta prunning
     <br />
-    <a href="https://github.com/nadavleh/Chess-AI"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nadavleh/Chess_AI"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/nadavleh/Chess-AI">View Demo</a>
+    <a href="https://github.com/nadavleh/Chess_AI">View Demo</a>
     ·
-    <a href="https://github.com/nadavleh/Chess-AI/issues">Report Bug</a>
+    <a href="https://github.com/nadavleh/Chess_AI/issues">Report Bug</a>
     ·
-    <a href="https://github.com/nadavleh/Chess-AI/issues">Request Feature</a>
+    <a href="https://github.com/nadavleh/Chess_AI/issues">Request Feature</a>
   </p>
 </p>
 
@@ -106,7 +106,7 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/nadavleh/Chess-AI.git
+git clone https://github.com/nadavleh/Chess_AI.git
 ```
 2. Install NPM packages
 ```sh
@@ -127,7 +127,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/nadavleh/Chess-AI/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/nadavleh/Chess_AI/issues) for a list of proposed features (and known issues).
 
 
 
@@ -153,7 +153,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-Project Link: [https://github.com/nadavleh/Chess-AI](https://github.com/nadavleh/Chess-AI)
+Project Link: [https://github.com/nadavleh/Chess_AI](https://github.com/nadavleh/Chess_AI)
 
 
 
