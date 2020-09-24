@@ -116,12 +116,11 @@ def main():
                                 playerClicks = [sqSelected]
 
             elif not gameOver and not gs.WhiteToMove:           #########ADDED here: all of the elif
-                score, move = ai.alphaBeta(gs, depth = 3)
+                score, move = ai.alphaBeta(gs, depth = 4)
                 gs.makeMove(move)
                 moveMade = True
                 moveCount += 1
-                # v = ai.getBestMove(gs,depth = 3)
-                # gs.makeMove(v[1])
+
 
             # keyboard press handler
             elif e.type == p.KEYDOWN:

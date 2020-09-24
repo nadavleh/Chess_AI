@@ -145,6 +145,9 @@ class ChessAI:
         
         
     def getBestMove(self, position, depth = 3):
+    # =============================================================================
+    # this function is essentially a minimax algoithm implementatiom
+    # =============================================================================
         # position is a gameState object (or rather a reference to one)
         if depth == 0 or position.checkmate or position.stalemate:
             return (self.staticPositionValue(position), None)
@@ -175,6 +178,10 @@ class ChessAI:
                 return (bestScore, bestMove)
 
     def alphaBeta(self, position, depth = 3 , alpha = -float("inf"), beta = float("inf")):
+        # print("entered at depth =", depth)
+    # =============================================================================
+    # this function is a minimax algoithm implementatiom with alpha-beta prunning
+    # =============================================================================
         # position is a gameState object (or rather a reference to one)
         if depth == 0 or position.checkmate or position.stalemate:
             return (self.staticPositionValue(position), None)
@@ -184,12 +191,13 @@ class ChessAI:
                 validMoves = position.getValidMoves()
                 for move in validMoves:
                     position.makeMove(move)
-                    score, foo = self.getBestMove(position,depth-1)
+                    score, foo = self.alphaBeta(position,depth-1)
                     position.undoMove()
                     if score > alpha:
                         alpha = score
                         bestMove = move
                         if alpha >= beta:
+                            print("prunning occured w")
                             break
                 return (alpha, bestMove)
             else:
@@ -197,18 +205,23 @@ class ChessAI:
                 validMoves = position.getValidMoves()
                 for move in validMoves:
                     position.makeMove(move)
-                    score, foo = self.getBestMove(position,depth-1)
+                    score, foo = self.alphaBeta(position,depth-1)
                     position.undoMove()
                     if score < beta:
                         beta = score
                         bestMove = move
                         if alpha >= beta:
+                            print("prunning occured b")
                             break
                 return (beta, bestMove)
     
     def staticPositionValue(self, gameState):
+    # =============================================================================
+    # this function is evaluates a position given in gameState.board by summing all the pieces values
+    # (blacks values are the same as whites but negated) aswell as summing the square values of each respected 
+    # piece, available in the pieceSquaresTables dictionary
+    # =============================================================================
         sum = 0
-        # allyColor  = "w" if self.WhiteToMove else "b"
         if gameState.checkmate:
             if gameState.WhiteToMove:
                 return float("inf")
@@ -218,9 +231,6 @@ class ChessAI:
             return 0
         for r in range(8):
             for c in range(8):
-                # if gameState.board[r][c][0] == allyColor:
-                #     piece = allyColor + gameState.board[r][c][1]
- 
                 if gameState.board[r][c][0] == 'w':
                     sum += self.pieceValue[ gameState.board[r][c][1] ]
                     sum += self.pieceSquaresTables[ gameState.board[r][c] ][r][c]
