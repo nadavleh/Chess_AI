@@ -84,7 +84,7 @@ Here's a blank template to get started:
 ### Built With
 
 * [pygame](https://www.pygame.org/docs/)
-* [numpy](https://numpy.org/)
+
 
 
 
@@ -96,39 +96,15 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Clone the repo
-```sh
-git clone https://github.com/nadavleh/Chess_AI.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
+Just install pygame 1.9.6:
+              pip install pygame==1.9.6
 
 
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/nadavleh/Chess_AI/issues) for a list of proposed features (and known issues).
-
+Simply download the repository and run the ChessMain().py file. You will play as white, against the minimax algorithm with alpha-beta prunning. The current depth of search i 3 layers down the game tree, however the depth can be changed easily by searching for "depth" in ChessMain().py. You'll fing this parameter inside the line that call the function alphaBeta() 
+                score, move = ai.alphaBeta(gs, depth = 3)
+You can set this value to any integer greater than zero (at zero depth this function return only the current board evaluation and thus there's no "best move" to take and the program will crash as its trying to make a move of type "None")
 
 
 <!-- CONTRIBUTING -->
@@ -160,7 +136,6 @@ Project Link: [https://github.com/nadavleh/Chess_AI](https://github.com/nadavleh
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/nadavleh/repo.svg?style=flat-square
-[contributors-url]: https://github.com/nadavleh/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/nadavleh/repo.svg?style=flat-square
 [forks-url]: https://github.com/nadavleh/repo/network/members
 [stars-shield]: https://img.shields.io/github/stars/nadavleh/repo.svg?style=flat-square
@@ -168,8 +143,5 @@ Project Link: [https://github.com/nadavleh/Chess_AI](https://github.com/nadavleh
 [issues-shield]: https://img.shields.io/github/issues/nadavleh/repo.svg?style=flat-square
 [issues-url]: https://github.com/nadavleh/repo/issues
 [license-shield]: https://img.shields.io/github/license/nadavleh/repo.svg?style=flat-square
-[license-url]: https://github.com/nadavleh/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/nadavleh
 [product-screenshot]: https://github.com/nadavleh/Chess_AI/blob/master/images/screenshot.png
-# Chess_AI
+
