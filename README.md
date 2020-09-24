@@ -54,8 +54,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
+* [Prerequisites](#prerequisites)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
@@ -81,12 +80,7 @@ Here's a blank template to get started:
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
+## Prerequisites
 
 Just install pygame 1.9.6:
               pip install pygame==1.9.6
