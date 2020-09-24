@@ -171,4 +171,5 @@ Project Link: [https://github.com/nadavleh/Chess_AI](https://github.com/nadavleh
 [license-url]: https://github.com/nadavleh/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/nadavleh
-[product-screenshot]: images/screenshot.png# Chess_AI
+[product-screenshot]: https://github.com/nadavleh/Chess_AI/blob/master/images/screenshot.png
+# Chess_AI
