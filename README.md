@@ -66,11 +66,8 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/nadavleh/Chess_AI/blob/master/images/screenshot.png)
-<!-- 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
--->
+
+As seen in the image, this project uses the pygmae module inorder to implement a simple chess GUI, in which you play as white against the cumputer which utilizes the minimax algorithm, supplemented by alpha-beta pruning to reduce the effective branching factor. The GUI features "Last move" and "possible piece moves" highlighting in green and yellow respectively. Much of the GUI is based upon the following [Youtube playlist] (https://www.youtube.com/playlist?list=PLBwF487qi8MGU81nDGaeNE1EnNEPYWKY_), however you may encounter some critical differences.
 
 ### Built With
 
