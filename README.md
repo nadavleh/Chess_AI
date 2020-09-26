@@ -75,6 +75,7 @@ Here's a blank template to get started:
 ### Built With
 
 * [pygame](https://www.pygame.org/docs/)
+* [Python 3.7.1](https://www.python.org/downloads/release/python-371/)
 
 
 
@@ -88,9 +89,7 @@ Just install pygame 1.9.6:
 
 ## Usage
 
-Simply download the repository and run the ChessMain().py file. You will play as white, against the minimax algorithm with alpha-beta prunning. The current depth of search i 3 layers down the game tree, however the depth can be changed easily by searching for "depth" in ChessMain().py. You'll fing this parameter inside the line that call the function alphaBeta() 
-                score, move = ai.alphaBeta(gs, depth = 3)
-You can set this value to any integer greater than zero (at zero depth this function return only the current board evaluation and thus there's no "best move" to take and the program will crash as its trying to make a move of type "None")
+Simply download the repository and run the ChessMain().py file. You will play as white, against the minimax algorithm with alpha-beta prunning. The current depth of search is 3 layers down the game tree, however the depth can be changed easily by searching for "depth" in ChessMain().py. You'll find this parameter inside the line that calls the function alphaBeta(). You can set this value to any integer greater than zero (at zero depth this function returns only the current board evaluation and thus there's no "best move" to take. Consequently, The program will crash as its trying to make a move of type "None")
 
 
 <!-- CONTRIBUTING -->
